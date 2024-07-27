@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS-24</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .background-picture {
+      background-image: url(images/53_20240124_1706117026.jpg); 
+      height: auto; 
+      background-size: cover;
+      color: #ffffff; 
+      display: flex;
+      align-items: center;
+      
+    }
+    .curvebox{
+        border-radius: 25px;
+    }
+    
+    :placeholder-shown{
+        font-weight: 500;
+        
+        
+    }
+    .line-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .line-container hr {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 0 10px;
+        }
+        .line-container span {
+            padding: 0 10px;
+            font-size: 14px;
+            color: #999;
+        }
+        
+</style>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light row m-0">
+        <div class="container ">
+            <a class="navbar-brand " href="#">
+              <img src="images/1_20230830_1693395013.webp" alt=""  width="80" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Select City
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Kochi</a></li>
+                            <li><a class="dropdown-item" href="#">Banglore</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Current Location</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="background-picture row d-flex container-fluid m-0">
+        <div class="col-lg-6 col-md-12">
+            <h1 class="ms-5 fw-bold">Sell your car <br>in minutes</h1>
+            <p class="ms-5 fw-bold fs-3">Get doorstep pick up <br>and instant payment</p>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+            <div class="pt-5 pb-3 m-3 container curvebox bg-white  align-items-baseline text-center border border-warning ">
+                <span class="fw-bold fs-3 text-dark " >Enter your car number</span>
+                
+                <div class="input-group input-group-lg  pt-2">
+                    <span class="input-group-text fs-6 " id="inputGroup-sizing-lg">IND</span>
+                    <input type="text" class="form-control text-center" placeholder="DL 01 AB 12XX" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+
+                <div class="d-grid mt-4 ">
+                    <button class="btn btn-warning btn-lg fs-6" type="button">Get car price</button>
+                </div>
+
+                <div class="line-container mt-5">
+                    <hr>
+                    <span>Or</span>
+                    <hr>
+                </div>
+
+                <p class="text-secondary">Start with your car brand</p>
+
+                <div>
+                    <ul class="row list-unstyled d-flex">
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded">
+                                <img src="images/maruti-suzuki.webp" alt="" width="95" class="p-2">
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded">
+                                <img src="images/mahindra.webp" alt="" width="95" class="p-2">
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded">
+                                <img src="images/5ec3e46558550c000442774b.png" alt="" width="57" class="">
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded">
+                                <img src="images/bmw.png" alt="" width="57" class="p-1">
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded">
+                                <img src="images/chevrolet.png" alt="" width="57" class="">
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="m-3 bg-light rounded ">
+                                <img src="images/fiat.png" alt="" width="57" class="">
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid ">
+        <div class="pt-5  container-fluid">
+            <p class="fw-bold fs-2 ps-4">Process of selling used car</p>
+            <div>
+                <ul class="row list-unstyled justify-content-center  ">
+                    <li class="col-md-6 col-lg-4 col-sm-12  ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/get price.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    <b class="fs-4">Get price online</b><br>
+                                    <p class="text-secondary">We Answer some questions about your car to help us understand its <br>condition</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 col-sm-12 ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/car inspect.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    <b class="fs-4">Car inspection</b><br>
+                                    <p class="text-secondary">Our car expert will physically verify your car’s condition and give you the final offer</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 col-sm-12 ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/car pick up.webp" class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <span class="card-text">
+                                    <b class="fs-4">Car pick up & payment</b><br>
+                                    <p class="text-secondary">We will transfer the amount directly to your bank account before your car is picked up </p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="pt-3  container-fluid">
+            <p class="fw-bold fs-2 ps-4 ">Why sell car to CARS24?</p>
+            <div>
+                <ul class="row list-unstyled justify-content-center  ">
+                    <li class="col-md-6 col-lg-3 col-sm-12 ps-5 mb-3 ">
+                        <div class="bg-light curvebox p-3" >
+                            <img src="https://assets.cars24.com/production/c2b-website/240726072212/js/e657349555ae1e67cfab468c034388b6.svg" alt="great deal" >
+                            <div class="ps-1 pt-3">
+                                <p><b class="fw-bold fs-4">Greatprice</b><br>
+                                    Largest dealer network + Smart AI Pricing Engine = great deal for your car
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 col-sm-12 ps-5 mb-3">
+                        <div class="bg-light curvebox p-3 " >
+                            <img src="https://assets.cars24.com/production/c2b-website/240726072212/js/2223cf407327df8669863dbc7debc7af.svg" alt="Instant payment" >
+                            <div class="ps-1 pt-3">
+                                <p><b class="fw-bold fs-4">Instant payment</b><br>
+                                    The amount is transferred directly to your bank account within minutes
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 col-sm-12 ps-5 mb-3">
+                        <div class="bg-light curvebox p-3 pb-1" >
+                            <img src="https://assets.cars24.com/production/c2b-website/240726072212/js/7a035834a5b4855f0e797a266248d280.svg" alt="Hassle free" >
+                            <div class="ps-1 pt-3">
+                                <p><b class="fw-bold fs-4">Hassle-free documentation</b><br>
+                                    Documentation and RC transfers can take months! We’ll handle it all
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-3 col-sm-12 ps-5 mb-3 ">
+                        <div class="bg-light curvebox p-3" >
+                            <img src="https://assets.cars24.com/production/c2b-website/240726072212/js/568ba8cbae10f807d94f744f75b65436.svg" alt="Sell from" >
+                            <div class="ps-1 pt-3">
+                                <p><b class="fw-bold fs-4">Sell from anywhere</b><br>
+                                    From inspection to payment, everything right from your doorstep!
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid ">
+        <div class="pt-5  container-fluid">
+            <p class="fw-bold fs-2 ps-4">6 Lakh+ happy customers</p>
+            <div>
+                <ul class="row list-unstyled  justify-content-center ">
+                    <li class="col-md-6 col-lg-4 col-sm-12 ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/creata.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    <p class="text-secondary">12 Mar, 2024 </p>
+                                    <b class="fs-5">Exceptional service</b><br>
+                                    <p class="text-secondary">We Answer some questions about your car to help us understand its <br> condition</p>
+                                </span>
+                                <h6 class="fw-bold">Ankit Malhotra</h6>
+                                <p class="text-secondary">Sold Hyundai Creata, Gurgaon</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 col-sm-12 ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/verna.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    <p class="text-secondary">7 Mar, 2024 </p>
+                                    <b class="fs-5">Hassle-free selling process</b><br>
+                                    <p class="text-secondary">Our car expert will physically verify your car’s condition and give you the final offer</p>
+                                    </span>
+                                <h6 class="fw-bold">Ankit Malhotra</h6>
+                                <p class="text-secondary">Sold Hyundai Verna, New Delhi</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 col-sm-12 ps-5 ">
+                        <div class="card m-4" style="width: 20rem;">
+                            <img src="images/polo.webp" class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <span class="card-text">
+                                    <p class="text-secondary">12 Mar, 2024 </p>
+                                    <b class="fs-5">Quick & easy process</b><br>
+                                    <p class="text-secondary">We will transfer the amount directly to your bank account before your car is picked up </p>
+                                </span>
+                                <h6 class="fw-bold">Ankit Malhotra</h6>
+                                <p class="text-secondary">Sold Volkswagen Polo, New Delhi</p>
+                            </div>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light p-4">
+        <span class="fw-bold fs-2 p-4 ">Frequently Asked Questions</span>
+        <div class="container mt-4">
+            <div class="accordion pb-4" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Why is CARS24 the best place to sell my car online?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body text-secondary">
+                        Not only do we offer a great price on each car we buy with Instant Payment, we ensure the entire car selling exeprience is a hassle-free. The entire process can be completed online, even the physical inspection of car is done at your home as per the date and time decided by you. We also offer full after sales support to ensure you have zero liability until the RC transfer is complete.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Can I sell a car that has an ongoing loan on it?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body text-secondary">
+                        Yes you can. Based on the valuation of your car, CARS24 will handle the loan closures on your behalf, and will transfer the remaining balance to your account.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Is the car owner required to be present at the time of car pick up & inspection?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body text-secondary">
+                        No. Anyone can be present during the inspection with the required documents and the car keys. The owner only needs to be present to sign documents at the time of sale.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Do I need to be present at the RTO for RC transfer?
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body text-secondary">
+                        We take care of all documentation, including the free RC transfer. In case there is any mismatch in RC like signature mismatch, you may need to be present at the RTO. Some States also require the previous owner to be present at the RTO in order to register the car with the new owner, also known as 'Party Peshi'. A CARS24 representative will be present with you throughout the process.
+                      </div>
+                    </div>
+                </div>
+                <a href="#" class="text-uppercase text-warning fw-bold">View all faq's</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 fw-bold fs-1 m-5 text-primary">
+                <p class="mb-0">
+                    The simplest <br>
+                    way to sell!
+                </p>
+                <button class="btn btn-warning col-4 btn-sm fw-bold fs-4 text-light ">Get car price</button>
+            </div>            
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-primary p-4 pb-4 text-center">
+            <div>
+                <img src="https://assets.cars24.com/production/c2b-website/240726175215/js/2bf1d0fcde07f1f76a457b5af3b7b1d5.svg" alt="">
+            </div>
+            <div class="d-flex pt-4 gap-3 justify-content-center text-light">
+                <p>® 2019 www.cars24.com</p>
+                <p>All rights reserved</p>
+            </div>
+            <div>
+                <ul class="d-flex justify-content-center list-unstyled mx-3 text-light gap-2">
+                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="text-light text-decoration-none">24x7 Support</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    <li>|</li>
+                    <li><a href="#" class="text-light text-decoration-none">Terms % Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
